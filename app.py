@@ -37,6 +37,10 @@ def delete(sno):
     db.session.commit()
     return redirect("/")
 
+@app.route('/about')
+def delete(sno):
+    return render_template('about.html')
+
 @app.route('/update/<int:sno>', methods=['GET','POST'])
 def update(sno):
     if request.method == "POST":
