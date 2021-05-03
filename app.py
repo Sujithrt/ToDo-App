@@ -38,7 +38,7 @@ def delete(sno):
     return redirect("/")
 
 @app.route('/about')
-def delete(sno):
+def about():
     return render_template('about.html')
 
 @app.route('/update/<int:sno>', methods=['GET','POST'])
